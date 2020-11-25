@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-. $IDF_PATH/export.sh
+OLD_PWD = "$(pwd)"
+
+./esp-idf/install.sh
+
+. esp-idf/export.sh
 
 echo Starting
 
